@@ -1,0 +1,47 @@
+<section>
+        <div class="row">
+            <div class="leftcolumn">
+              <div class="card">
+                <p>„Leid, Krieg, Tod. Die Welt ist ein ungerechter Ort. Überall werden Menschen unterdrückt, gefoltert und eingeschränkt. 
+                Macht und Einfluss können einen größenwahnsinnig machen. 
+                Doch Riku kriegt davon im relativ friedlichen Land Green Utopia nichts mit. Er hat Freunde, geht zur Schule und 
+                lebt einfach sein Leben. Bis plötzlich eine Militärorganisation seine Heimatstadt angreift und für Angst sorgt. 
+                Er entschließt gemeinsam mit seinen Freunden den Machenschaften der sogenannten Razor Company zu beenden und das 
+                Ultimate Ribon zu finden, womit er die Welt wieder gerecht machen will.“</p>
+                <p>Weitere Informationen über den Webcomic findest du <a href="/info">hier &rarr;</a>.</p>
+              </div>
+              {{#each posts}}
+                <div class="card">
+                  <h2>{{title}}</h2>
+                  <h5><a href="#">Admin</a>, {{createDate}}</h5>
+                  <div style="height:200px;">
+                    <img style="height:200px;" src="{{file}}" alt="fffff">
+                  </div>
+                  <p>{{description}}</p>
+                  <a href="#" class="btn btn-primary">Mehr lesen &rarr;</a>
+                </div>
+              {{/each}}
+            </div> 
+            <div class="rightcolumn">
+              <div class="card">
+                <h2>Über Uns</h2>
+                <div class="fakeimg" style="height:100px;">Image</div>
+                <p>Etwas Text über Uns.</p>
+              </div>
+              <div class="card">
+                <h3>Top Artikel</h3>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div>
+              </div>
+              <div class="card">
+                <h3>Folge Uns!</h3>
+                <a class="fol-ic" href="https://facebook.com" target="_blank"><i class="fab fa-youtube"></i> Facebook</a>
+                <a class="fol-ic" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a class="fol-ic" href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a class="fol-ic" href="https://discord.gg/hNmmtcG" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+                <a class="fol-ic" href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
+              </div>
+            </div>           
+          </div>
+    </section>

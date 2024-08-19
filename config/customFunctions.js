@@ -1,0 +1,35 @@
+/* jshint esversion: 10 */
+const {isAdmin} = require('../models/UserModel');
+
+module.exports = {
+    selectOption: function (status, options) {
+        return options.fn(this).replace(new RegExp('value=\"' + status + '\"'), '$&selected="selected"');
+    },
+
+    isEmpty: function (obj) {
+        for (let key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                return false;
+            }
+        }
+        return true;
+    },
+
+    isUserAuthenticated: (req, res, next) => {
+        if (req.isAuthenticated()) {
+            next();
+        }
+        else {
+            res.redirect('/login');
+        }
+    }
+
+    /*isUserAdmin: (req, res, next) => {
+        if (isAdmin == true) {
+            next();
+        }
+        else {
+            res.redirect('/login');
+        }
+    }*/
+};
